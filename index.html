@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Cost Optimization Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="dashboard-header">
+        <div class="header-content">
+            <div class="header-title">
+                <h1>AWS Cost Optimization Dashboard</h1>
+                <p>Intelligent EC2 Cost Management</p>
+            </div>
+            <button class="btn btn--primary refresh-btn" id="refreshBtn">
+                <i data-feather="refresh-cw"></i>
+                Refresh Data
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard-main">
+        <!-- KPI Cards -->
+        <section class="kpi-section">
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-icon">
+                        <i data-feather="dollar-sign"></i>
+                    </div>
+                    <div class="kpi-content">
+                        <h3>Monthly Cost</h3>
+                        <div class="kpi-value">$1,245.67</div>
+                        <div class="kpi-change negative">-10.3% from last month</div>
+                    </div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-icon savings">
+                        <i data-feather="trending-down"></i>
+                    </div>
+                    <div class="kpi-content">
+                        <h3>Savings</h3>
+                        <div class="kpi-value">$387.23</div>
+                        <div class="kpi-change positive">+15.2% this month</div>
+                    </div>
+                </div>
+                <div class="kpi-car
